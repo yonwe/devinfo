@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "rnogur"
-AuthUserFile "/password/"
+AuthUserFile "/weblio/password/"
 require valid-user
