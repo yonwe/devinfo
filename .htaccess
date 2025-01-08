@@ -1,4 +1,4 @@
-AuthUserFile /weblio/docs/.htpasswd
+AuthUserFile /weblio/.htpasswd
 AuthType Basic
 AuthGroupFile /dev/null
 AuthName "ajia"
