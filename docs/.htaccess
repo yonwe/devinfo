@@ -1,4 +1,8 @@
+AuthUserFile /weblio/docs/.htpasswd
 AuthType Basic
-AuthName "rnogur"
-AuthUserFile "/weblio/password/"
-require valid-user
+AuthGroupFile /dev/null
+AuthName "ajia"
+require valid-usre
+<Files ~ "^.(htpasswd|htaccess)$">
+deny from all
+</Files>
