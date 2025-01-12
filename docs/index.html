@@ -4,26 +4,21 @@
 <body bgcolor="FFC0CB">
 <script type="text/javascript">
 let appName = document.createElement('p');
-
-appName.innerHTML = 'BROWSER:'
+appName.innerHTML = 'BROWSER:';
 appName.innerHTML += navigator.appName;
 document.body.appendChild(appName);
 
 let appVersion = document.createElement('p');
-
 appVersion.innerHTML = navigator.appVersion;
-
 document.body.appendChild(appVersion);
 
 let cookieEnabled = document.createElement('p');
-
-cookieEnabled = 'Cookie:'
+cookieEnabled = 'Cookie:';
 cookieEnabled.innerHTML += navigator.cookieEnabled;
-
 document.body.appendChild(cookieEnabled);
 
 let platform = document.createElement('p');
-platform.innerHTML = 'Platform:' 
+platform.innerHTML = 'Platform:';
 platform.innerHTML += navigator.platform;
 document.body.appendChild(platform);
 </script>
