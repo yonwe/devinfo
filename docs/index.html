@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><title>Auth</title></head>
+<head><meta charset="utf-8"><title>Your browser information</title></head>
 <body bgcolor="FFC0CB">
-<h1>English words translator using weblio</h1>
-<script>
-let pass = prompt('type password');
-if(pass == 'pass'){
-alert('ok);
-}
-else {
-alert('ng');
-}
+<script type="text/javascript">
+let appName = document.createElement('p');
+
+appName.innerHTML = navigator.appName;
+
+appName.innerHTML = navigator.appVersion;
+
+document.body.appendChild(appName);
+
+let appVersion = document.createElement('p');
+
+appVersion.innerHTML = navigator.appVersion;
+
+document.body.appendChild(appVersion);
+
+let cookieEnabled = document.createElement('p');
+
+cookieEnabled.innerHTML = navigator.cookieEnabled;
+
+document.body.appendChild(cookieEnabled);
+
+let platform = document.createElement('p');
+platform.innerHTML = navigator.platform;
+document.body.appendChild(platform);
 </script>
 </body></html>
