@@ -8,14 +8,10 @@ appName.innerHTML = 'BROWSER:';
 appName.innerHTML += navigator.appName;
 document.body.appendChild(appName);
 
-let appVersion = document.createElement('p');
-appVersion.innerHTML = navigator.appVersion;
-document.body.appendChild(appVersion);
-
-let cookieEnabled = document.createElement('p');
-cookieEnabled = 'Cookie:';
-cookieEnabled.innerHTML += navigator.cookieEnabled;
-document.body.appendChild(cookieEnabled);
+let cookieis = document.createElement('p');
+cookieis.innerHTML = 'Cookie:';
+cookieis.innerHTML += navigator.cookieEnabled;
+document.body.appendChild(cookieis);
 
 let platform = document.createElement('p');
 platform.innerHTML = 'Platform:';
