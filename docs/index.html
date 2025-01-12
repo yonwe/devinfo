@@ -5,10 +5,8 @@
 <script type="text/javascript">
 let appName = document.createElement('p');
 
-appName.innerHTML = navigator.appName;
-
-appName.innerHTML = navigator.appVersion;
-
+appName.innerHTML = 'BROWSER:'
+appName.innerHTML += navigator.appName;
 document.body.appendChild(appName);
 
 let appVersion = document.createElement('p');
@@ -19,12 +17,14 @@ document.body.appendChild(appVersion);
 
 let cookieEnabled = document.createElement('p');
 
-cookieEnabled.innerHTML = navigator.cookieEnabled;
+cookieEnabled = 'Cookie:'
+cookieEnabled.innerHTML += navigator.cookieEnabled;
 
 document.body.appendChild(cookieEnabled);
 
 let platform = document.createElement('p');
-platform.innerHTML = navigator.platform;
+platform.innerHTML = 'Platform:' 
+platform.innerHTML += navigator.platform;
 document.body.appendChild(platform);
 </script>
 </body></html>
